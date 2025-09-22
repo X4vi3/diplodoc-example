@@ -2,3 +2,6 @@ langs: ['ru', 'en']
 
 docs-viewer:
   langs: ['en','ru']
+  logo-options:
+    src: https://i.yapx.ru/aq9Nr.png?size=36px
+    title: лого нету
