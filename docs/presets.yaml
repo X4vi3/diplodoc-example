@@ -1,0 +1,5 @@
+default:
+  tld: ru
+
+en:
+  tld: en
