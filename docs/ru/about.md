@@ -9,7 +9,7 @@ metadata:
     - property: 'og:type'
       content: 'article'
     - property: 'og:url'
-      content: 'ссылка на страницу, где всё это происходит'
+      content: 'https://diplodoc.com/docs/ru/syntax/interactive-elements/cuts'
 ---
 
 
