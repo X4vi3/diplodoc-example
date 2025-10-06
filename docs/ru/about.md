@@ -1,3 +1,18 @@
+---
+metadata:
+    - property: 'og:title'
+      content: 'Заголовок'
+    - property: 'og:description'
+      content: 'Описание страницы'
+    - property: 'og:image'
+      content: 'https://i.pinimg.com/736x/6f/52/8a/6f528af6c29bc8b740e39eb9407a5d7d.jpg'
+    - property: 'og:type'
+      content: 'article'
+    - property: 'og:url'
+      content: 'ссылка на страницу, где всё это происходит'
+---
+
+
 # Основная страница "О проекте"
 
 Это пример простого проекта документации.
