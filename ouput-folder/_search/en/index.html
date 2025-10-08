@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="./" />
+        <title>Search</title>
+        
+        
+        <meta robots="noindex">
+        <meta http-equiv="Content-Security-Policy" content="worker-src 'self';">
+        <style type="text/css">html, body {min-height:100vh; height:100vh;}</style>
+        undefined
+        
+        <link type="text/css" rel="stylesheet" href="../../_bundle/vendor-fe111bf380adc637.css"/>
+        <link type="text/css" rel="stylesheet" href="../../_bundle/search-b82629d53f2e437c.css"/>
+    </head>
+    <body class="g-root g-root_theme_light">
+        <div id="root"></div>
+        <script type="application/json" id="diplodoc-state">
+            {"lang":"en","enabled":true,"provider":"local","tolerance":1,"confidense":"phrased","api":"_search/api.js","link":"_search/en/index.html"}
+        </script>
+        <script type="application/javascript">
+            const data = document.querySelector('script#diplodoc-state');
+            window.__DATA__ = {
+                search: JSON.parse((function unescape(string) {
+                return string.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");
+              })(data.innerText)),
+            }
+        </script>
+        <script type="application/javascript" defer src="_search/en/1759929409508-resources.js"></script>
+        <script type="application/javascript" defer src="../../_bundle/search-7dc3bfe50645287d.js"></script>
+        <script type="application/javascript" defer src="../../_bundle/vendor-6e21eae2c11cd197.js"></script>
+        <script type="application/javascript" defer src="../../_bundle/react-23c48c44d4a3ad02.js"></script>
+        <script type="application/javascript" defer src="1759929409508-resources.js"></script>
+        
+    </body>
+</html>
