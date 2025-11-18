@@ -1,52 +1,36 @@
+fullScreen: true
 blocks:
-  - type: 'header-block'
-    width: 's'
-    offset: 'default'
-    title: 'Diplodoc'
-    resetPaddings: true
-    verticalOffset: 'l'
-    description: >-
-      A platform with open-source code for creating technical documentation
-      based on the concept of Docs as Code. A simple and convenient document
-      management solution for large and small teams.
-    background:
-      image:
-        mobile: 'https://storage.yandexcloud.net/diplodoc-www-assets/pages/index-diplodoc/ddos-index-cover-mini.png'
-        desktop: '../../_images/cover.png'
-      color: '#C6FE4D'
-      fullWidth: false
-    buttons:
-      - text: 'Quickstart'
-        theme: 'dark'
-        size: 'promo'
-        url: '/quickstart'
-      - text: 'GitHub'
-        theme: 'outlined'
-        size: 'promo'
-        url: 'https://github.com/diplodoc-platform'
-
   - type: 'text'
-    text: 'Текст перед картинками. Если виден — движок рендерит блоки.'
+    text: 'Текст перед картинками'
 
   - type: 'image'
-    url: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+    image:
+      mobile: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      desktop: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      disableCompress: true
     alt: 'Без параметра (должно быть видно)'
 
-  - type: 'text'
-    text: 'Текст между картинками. Смотрим, виден ли второй блок.'
+  - type: 'image'
+    text: 'Текст между картинками'
 
   - type: 'image'
-    url: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+    image:
+      mobile: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      desktop: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      disableCompress: true
     alt: 'hide: false (тоже должно быть видно)'
     hide: false
 
   - type: 'text'
-    text: 'Текст перед последней картинкой.'
+    text: 'Текст перед последней картинкой'
 
   - type: 'image'
-    url: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+    image:
+      mobile: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      desktop: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      disableCompress: true
     alt: 'hide: true (должно пропасть, если фича работает)'
     hide: true
 
   - type: 'text'
-    text: 'Текст после всех картинок. Если он виден — страница рендерится.'
+    text: 'Текст после всех картинок'
