@@ -8,8 +8,8 @@ blocks:
     description: 'A platform with open-source code for creating technical documentation based on the concept of Docs as Code. A simple and convenient document management solution for large and small teams.'
     background:
       image:
-        mobile: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdrOOBgyntOz0PvqbjzTgjd_i510jyitwvLg&s'
-        desktop: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdrOOBgyntOz0PvqbjzTgjd_i510jyitwvLg&s'
+        mobile: 'https://ibb.co/PzFCfjLm'
+        desktop: 'https://ibb.co/PzFCfjLm'
       color: '#C6FE4D'
       fullWidth: false
     buttons:
