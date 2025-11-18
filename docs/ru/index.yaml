@@ -1,10 +1,23 @@
-title: Шаблон документации
-links:
-  - title: О проекте
-    href: about.md
-  - title: Страница Diplodoc на главной странице
-    href: page.md
-  - title: Структура YFM на главной странице
-    href: anotherpage.md
-  - title: Подраздел на главной странице
-    href: sub-section/
+blocks:
+  - type: 'header-block'
+    width: 's'
+    offset: 'default'
+    title: 'Diplodoc'
+    resetPaddings: true
+    verticalOffset: 'l'
+    description: 'A platform with open-source code for creating technical documentation based on the concept of Docs as Code. A simple and convenient document management solution for large and small teams.'
+    background:
+      image:
+        mobile: 'https://storage.yandexcloud.net/diplodoc-www-assets/pages/index-diplodoc/ddos-index-cover-mini.png'
+        desktop: 'https://storage.yandexcloud.net/diplodoc-www-assets/pages/index-diplodoc/ddos-index-cover-mini.png'
+      color: '#C6FE4D'
+      fullWidth: false
+    buttons:
+      - text: 'Quickstart'
+        theme: 'dark'
+        size: 'promo'
+        url: '/quickstart'
+      - text: 'GitHub'
+        theme: 'outlined'
+        size: 'promo'
+        url: 'https://github.com/diplodoc-platform'
