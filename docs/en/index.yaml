@@ -1,10 +1,59 @@
-title: Documentation Template
-links:
-  - title: About
-    href: about.md
-  - title: Diplodoc page on index page
-    href: page.md
-  - title: YFM Structure on index page
-    href: anotherpage.md
-  - title: Sub-section on index page
-    href: sub-section/
+{
+  "type": "Layout",
+  "content": [
+    {
+      "type": "Header",
+      "title": "Тест параметра hide для Image",
+      "description": "Проверяем видимость изображений на разных разрешениях"
+    },
+    {
+      "type": "Grid",
+      "items": [
+        {
+          "type": "Card",
+          "title": "Видно всегда",
+          "content": {
+            "type": "Image",
+            "src": "https://storage.yandexcloud.net/cloud-www-assets/constructor/storybook/images/img_6-12_light.png",
+            "alt": "Видно на всех экранах"
+          }
+        },
+        {
+          "type": "Card",
+          "title": "Скрыто на mobile (xs)",
+          "content": {
+            "type": "Image",
+            "src": "https://storage.yandexcloud.net/cloud-www-assets/constructor/storybook/images/img_4-3_light.png",
+            "alt": "Скрыто на мобильных",
+            "hide": ["xs"],
+            "mods": {
+              "className": "hide-test-xs"
+            }
+          }
+        },
+        {
+          "type": "Card",
+          "title": "Скрыто на tablet (sm, md)",
+          "content": {
+            "type": "Image",
+            "src": "https://storage.yandexcloud.net/cloud-www-assets/constructor/storybook/images/img_16-9_light.png",
+            "alt": "Скрыто на планшетах",
+            "hide": ["sm", "md"],
+            "mods": {
+              "className": "hide-test-sm-md"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "Text",
+      "content": "## Инструкция для проверки:\n" +
+        "1. Откройте инструменты разработчика (F12)\n" + 
+        "2. Проверьте наличие классов:\n" +
+        "   - `.hide-test-xs` должно иметь `pc-hidden_xs`\n" +
+        "   - `.hide-test-sm-md` должно иметь `pc-hidden_sm` и `pc-hidden_md`\n" +
+        "3. Измените размер окна и наблюдайте за видимостью"
+    }
+  ]
+}
