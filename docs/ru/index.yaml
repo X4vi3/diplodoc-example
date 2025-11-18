@@ -1,36 +1,36 @@
 fullScreen: true
 blocks:
-  - type: 'text'
-    text: 'Текст перед картинками'
-
-  - type: 'image-block'
-    image:
-      mobile: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
-      desktop: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
-      disableCompress: true
-    alt: 'Без параметра (должно быть видно)'
-
-  - type: 'text'
-    text: 'Текст между картинками'
-
-  - type: 'image-block'
-    image:
-      mobile: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
-      desktop: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
-      disableCompress: true
-    alt: 'hide: false (тоже должно быть видно)'
-    hide: false
-
-  - type: 'text'
-    text: 'Текст перед последней картинкой'
-
-  - type: 'image-block'
-    image:
-      mobile: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
-      desktop: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
-      disableCompress: true
-    alt: 'hide: true (должно пропасть, если фича работает)'
-    hide: true
-
-  - type: 'text'
-    text: 'Текст после всех картинок'
+  - type: 'header-block'
+    width: 's'
+    offset: 'default'
+    title: 'Diplodoc'
+    resetPaddings: true
+    verticalOffset: 'l'
+    description: 'Платформа для создания технической документации в концепции Docs as Сode с открытым исходным кодом. Простое и удобное решение для развертывания документации больших и маленьких команд.'
+    background:
+      light:
+        image:
+          mobile: '../_assets/cover.png'
+          desktop: 'https://storage.yandexcloud.net/diplodoc-www-assets/pages/index-diplodoc/ddos-index-cover.png'
+          disableCompress: true
+          hide: true
+        color: '#C6FE4D'
+        fullWidth: false
+      dark:
+        image:
+          mobile: '../_assets/cover-dark.png'
+          desktop: 'https://storage.yandexcloud.net/diplodoc-www-assets/pages/index-diplodoc/ddos-index-cover-dark.png'
+          disableCompress: true
+        color: '#C6FE4D'
+        fullWidth: false
+    buttons:
+      - text: 'Начать'
+        primary: true
+        theme: 'outlined'
+        size: 'promo'
+        url: '/'
+      - text: 'GitHub'
+        primary: true
+        theme: 'outlined'
+        size: 'promo'
+        url: 'https://github.com/diplodoc-platform'
