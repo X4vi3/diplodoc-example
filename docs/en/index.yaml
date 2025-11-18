@@ -1,4 +1,13 @@
 - type: image
   url: "https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg"
-  alt: "Hide test"
+  alt: "Без параметра (должно быть видно)"
+
+- type: image
+  url: "https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg"
+  alt: "hide: false (тоже должно быть видно)"
+  hide: false
+
+- type: image
+  url: "https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg"
+  alt: "hide: true (должно пропасть, если фича реально работает)"
   hide: true
