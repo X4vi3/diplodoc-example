@@ -1,26 +1,36 @@
+fullScreen: true
 blocks:
-  - type: text
-    text: "Текст перед картинками. Если виден — движок рендерит блоки."
+  - type: 'text'
+    text: 'Текст перед картинками'
 
-  - type: image
-    url: "https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg"
-    alt: "Без параметра (должно быть видно)"
+  - type: 'image-block'
+    image:
+      mobile: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      desktop: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      disableCompress: true
+    alt: 'Без параметра (должно быть видно)'
 
-  - type: text
-    text: "Текст между картинками."
+  - type: 'text'
+    text: 'Текст между картинками'
 
-  - type: image
-    url: "https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg"
-    alt: "hide: false (тоже должно быть видно)"
+  - type: 'image-block'
+    image:
+      mobile: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      desktop: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      disableCompress: true
+    alt: 'hide: false (тоже должно быть видно)'
     hide: false
 
-  - type: text
-    text: "Текст перед последней картинкой."
+  - type: 'text'
+    text: 'Текст перед последней картинкой'
 
-  - type: image
-    url: "https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg"
-    alt: "hide: true (должно пропасть, если фича работает)"
+  - type: 'image-block'
+    image:
+      mobile: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      desktop: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      disableCompress: true
+    alt: 'hide: true (должно пропасть, если фича работает)'
     hide: true
 
-  - type: text
-    text: "Текст после всех картинок. Если он виден, значит страница рендерится."
+  - type: 'text'
+    text: 'Текст после всех картинок'
