@@ -8,8 +8,8 @@ blocks:
     description: 'A platform with open-source code for creating technical documentation based on the concept of Docs as Code. A simple and convenient document management solution for large and small teams.'
     background:
       image:
-        mobile: 'https://ibb.co/PzFCfjLm'
-        desktop: 'https://ibb.co/PzFCfjLm'
+        mobile: 'https://storage.yandexcloud.net/diplodoc-www-assets/pages/index-diplodoc/ddos-index-cover-mini.png
+        desktop: 'https://storage.yandexcloud.net/diplodoc-www-assets/pages/index-diplodoc/ddos-index-cover-mini.png'
       color: '#C6FE4D'
       fullWidth: false
     buttons:
