@@ -1,0 +1,36 @@
+fullScreen: true
+blocks:
+  - type: 'text'
+    text: 'Текст перед картинками'
+
+  - type: 'image'
+    image:
+      mobile: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      desktop: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      disableCompress: true
+    alt: 'Без параметра (должно быть видно)'
+
+  - type: 'image'
+    text: 'Текст между картинками'
+
+  - type: 'image'
+    image:
+      mobile: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      desktop: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      disableCompress: true
+    alt: 'hide: false (тоже должно быть видно)'
+    hide: false
+
+  - type: 'text'
+    text: 'Текст перед последней картинкой'
+
+  - type: 'image'
+    image:
+      mobile: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      desktop: 'https://avatarko.ru/img/kartinka/1/Crazy_Frog.jpg'
+      disableCompress: true
+    alt: 'hide: true (должно пропасть, если фича работает)'
+    hide: true
+
+  - type: 'text'
+    text: 'Текст после всех картинок'
