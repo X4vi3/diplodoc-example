@@ -13,7 +13,6 @@ blocks:
           mobile: '../_assets/cover.png'
           desktop: 'https://storage.yandexcloud.net/diplodoc-www-assets/pages/index-diplodoc/ddos-index-cover.png'
           disableCompress: true
-          hide: true
         color: '#C6FE4D'
         fullWidth: false
       dark:
