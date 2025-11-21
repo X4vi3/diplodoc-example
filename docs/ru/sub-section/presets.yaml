@@ -1,3 +1,5 @@
+default:
+  mypreset_key: another_value
+
 mypreset:
-  section_name: "Подраздел"
-  section_description: "Пример подраздела документации"
+  my_other_preset_key: some_other_value
