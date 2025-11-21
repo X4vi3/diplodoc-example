@@ -10,6 +10,8 @@ jobs:
   post-build:
     permissions: write-all
     runs-on: ubuntu-latest
+    env:
+      DIPLODOC_PROJECT_LINK: ${{ vars.DIPLODOC_PROJECT_LINK }} # базовый preview URL из переменных проекта
     steps:
       - name: Upload
         uses: diplodoc-platform/docs-upload-action@v1
@@ -27,3 +29,64 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           project-link: ${{ vars.DIPLODOC_PROJECT_LINK }}
+
+      - name: Update/ensure preview comment with ?revision=pr-<num>&sha=<sha>
+        # использует github-script, чтобы на PR добавить/обновить ссылку с revision
+        uses: actions/github-script@v7
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BASE_PREVIEW_URL: ${{ vars.DIPLODOC_PROJECT_LINK }}
+        with:
+          script: |
+            const core = require('@actions/core');
+
+            // payload: workflow_run содержит массив pull_requests
+            const run = context.payload.workflow_run || {};
+            const pulls = run.pull_requests || [];
+
+            if (!pulls || pulls.length === 0) {
+              core.info('No pull_request associated with this workflow_run — skipping preview comment update.');
+              return;
+            }
+
+            const prNumber = pulls[0].number;
+            const headSha = run.head_sha || process.env.GITHUB_SHA || '';
+            const base = process.env.BASE_PREVIEW_URL || '';
+            if (!base) {
+              core.info('BASE_PREVIEW_URL empty — cannot build preview URL.');
+              return;
+            }
+
+            // Формируем уникальный URL для превью
+            const previewUrl = `${base}/?revision=pr-${prNumber}&sha=${headSha}`;
+            const body = `✅ Preview готов\nPreview: ${previewUrl}\nCommit: ${headSha}`;
+
+            core.info(`Will update/create preview comment on PR #${prNumber} with URL: ${previewUrl}`);
+
+            // Получаем комментарии PR
+            const { data: comments } = await github.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: prNumber,
+            });
+
+            // Ищем существующий комментарий, в котором есть базовый preview link (чтобы обновить его)
+            const existing = comments.find(c => c.body && c.body.includes(base));
+
+            if (existing) {
+              await github.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+              core.info(`Updated existing preview comment id=${existing.id} for PR #${prNumber}`);
+            } else {
+              await github.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: prNumber,
+                body,
+              });
+              core.info(`Created new preview comment for PR #${prNumber}`);
+            }
