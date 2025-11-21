@@ -1,5 +1,7 @@
 langs: ['ru', 'en']
 
+VarsPresets: mypreset
+
 docs-viewer:
   langs: ['en','ru']
 

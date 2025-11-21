@@ -1,0 +1,5 @@
+mypreset:
+  project_name: "Diplodoc Example"
+  version: "1.0.0"
+  author: "Тестовый автор"
+  description: "Пример проекта документации"
