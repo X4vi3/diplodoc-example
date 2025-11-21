@@ -1,6 +1,6 @@
 langs: ['ru', 'en']
 
-varsPresets: mypreset
+varsPreset: mypreset
 
 docs-viewer:
   langs: ['en','ru']
