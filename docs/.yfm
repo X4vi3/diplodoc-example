@@ -1,9 +1,6 @@
 langs: ['ru', 'en']
 
+varsPreset: mypreset
+
 docs-viewer:
   langs: ['en','ru']
-
-search:
-  provider: local
-  tolerance: 1
-  confidense: phrased
