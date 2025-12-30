@@ -5,5 +5,5 @@ docs-viewer:
 
 search:
   provider: local
-  tolerance: 1
+  tolerance: 2
   confidense: phrased
