@@ -7,3 +7,5 @@ search:
   provider: local
   tolerance: 3
   confidense: phrased
+interface:
+  feedback: false
