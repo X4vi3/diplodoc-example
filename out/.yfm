@@ -1,0 +1,13 @@
+langs: ['ru', 'en']
+
+docs-viewer:
+  langs: ['en','ru']
+  search: true
+
+viewer-interface:
+  search: true
+
+search:
+  provider: local
+  tolerance: 1
+  confidense: sparsed
