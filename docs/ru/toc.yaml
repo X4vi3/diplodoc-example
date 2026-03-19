@@ -10,16 +10,16 @@ navigation:
       icon: "https://ytsaurus.tech/assets/logo-light.svg"
   header:
     rightItems:
-    - type: 'dropdown'
-      text: 'Language'
-      icon: 'https://yastatic.net/s3/weather-frontend/front2/_next/static/media/ru_black.6900a042.svg'
-      items:
-        - text: 'Russian'
-          url: '/ru'
-          type: 'link'
-        - text: 'English'
-          url: '/'
-          type: 'link'
+      - type: 'dropdown'
+        text: 'Language'
+        icon: 'https://yastatic.net/s3/weather-frontend/front2/_next/static/media/ru_black.6900a042.svg'
+        items:
+          - text: 'Russian'
+            url: '/ru'
+            type: 'link'
+          - text: 'English'
+            url: '/'
+            type: 'link'
       - type: controls
     leftItems:
       - text: "Как всё устроено"
